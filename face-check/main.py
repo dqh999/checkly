@@ -1,16 +1,16 @@
-# This is a sample Python script.
+import os
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+print("🚀 Hệ thống nhận diện khuôn mặt")
+print("1️⃣ Quay video & lưu ảnh")
+print("2️⃣ Mã hóa khuôn mặt")
+print("3️⃣ Nhận diện khuôn mặt")
+choice = input("Chọn chức năng (1, 2 hoặc 3): ")
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+if choice == "1":
+    os.system("python scripts/capture_faces.py")
+elif choice == "2":
+    os.system("python scripts/encode_faces.py")
+elif choice == "3":
+    os.system("python scripts/recognize_faces.py")
+else:
+    print("❌ Lựa chọn không hợp lệ!")
